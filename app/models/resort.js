@@ -8,9 +8,9 @@ export default DS.Model.extend({
   region: DS.attr('string'),
   token: DS.attr('string'),
   weather: DS.attr('string'),
-  temperature: DS.attr('integer'),
-  last_24_hours_snowfall: DS.attr('integer'),
-  wind: DS.attr('integer'),
+  temperature: DS.attr('string'),
+  last_24_hours_snowfall: DS.attr('string'),
+  wind: DS.attr('string'),
   conditions: DS.attr('string'),
   human_readable_weather: DS.attr('string')
 });
