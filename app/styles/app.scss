@@ -9,3 +9,8 @@ $lighten-4: rgba(#fff,.6) !default;
 .lighten-2 { color: $lighten-2; }
 .lighten-3 { color: $lighten-3; }
 .lighten-4 { color: $lighten-4; }
+
+a,
+a:hover,
+a:focus,
+a:active { text-decoration: none; }

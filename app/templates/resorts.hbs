@@ -2,6 +2,6 @@
 
 {{#each}}
   {{#link-to 'resort' this}}
-    <h2>{{fullDescription}}</h2>
+    <h2><i {{bind-attr class="weatherIcon"}}></i> {{fullDescription}}</h2>
   {{/link-to}}
 {{/each}}
