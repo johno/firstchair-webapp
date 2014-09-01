@@ -16,19 +16,5 @@ export default DS.Model.extend({
 
   fullDescription: function() {
     return this.get('name') + ', ' + this.get('state');
-  }.property('name', 'state'),
-
-  // TODO: Break this out into a helper.
-  weatherIcon: function() {
-    var weather = this.get('weather');
-    if(weather == 'cloudy') {
-      return 'climacon cloud';
-    } else if(weather == 'partlycloudy') {
-      return 'climacon sun cloud';
-    } else if(weather == 'mostlycloudy') {
-      return 'climacon sun cloud';
-    } else {
-      return 'climacon sun';
-    }
-  }.property('weather')
+  }.property('name', 'state')
 });
