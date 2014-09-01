@@ -1,22 +1,29 @@
 import Ember from 'ember';
 
 function weatherIcon(weather) {
-  var weatherClass;
-  switch(weather) {
-    case 'cloudy':
-      weatherClass = 'cloud';
-      break;
-    case 'partlycloudy':
-      weatherClass = 'sun cloud';
-      break;
-    case 'mostlycloudy':
-      weatherClass = 'sun cloud';
-      break;
-    default:
-      weatherClass = 'sun';
-  }
+  var weatherClass = {
+    chanceflurries: 'sun flurries',
+    chancesleet: 'sun sleet',
+    chancetstorms: 'lightning',
+    cloudy: 'cloud',
+    flurries: 'flurries',
+    fog: 'fog',
+    hazy: 'haze',
+    mostlysunny: 'sun cloud',
+    partlysunny: 'sun cloud',
+    sleet: 'sleet',
+    sunny: 'sun',
+    tstorms: 'lightning',
+    clear: 'sun',
+    chancesnow: 'sun snow',
+    snow: 'snow',
+    partlycloudy: 'sun cloud',
+    mostlycloudy: 'sun cloud',
+    chancerain: 'drizzle',
+    rain: 'downpour'
+  };
 
-  return new Ember.Handlebars.SafeString('<i class="climacon ' + weatherClass + '"></i>');
+  return new Ember.Handlebars.SafeString('<i class="climacon ' + weatherClass[weather] + '"></i>');
 }
 
 export { weatherIcon };
