@@ -1,4 +1,7 @@
 <h1>Resorts</h1>
+
 {{#each}}
-  <h2>{{name}}</h2>
+  {{#link-to 'resort' this}}
+    <h2>{{fullDescription}}</h2>
+  {{/link-to}}
 {{/each}}

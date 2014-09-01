@@ -1,1 +1,11 @@
 @import "basscss/scss/basscss";
+
+$lighten-1: rgba(#fff,.125) !default;
+$lighten-2: rgba(#fff,.25) !default;
+$lighten-3: rgba(#fff,.375) !default;
+$lighten-4: rgba(#fff,.6) !default;
+
+.lighten-1 { color: $lighten-1; }
+.lighten-2 { color: $lighten-2; }
+.lighten-3 { color: $lighten-3; }
+.lighten-4 { color: $lighten-4; }
