@@ -1,15 +1,22 @@
 import Ember from 'ember';
 
 function weatherIcon(weather) {
-  if(weather == 'cloudy') {
-    return new Ember.Handlebars.SafeString('<i class="climacon cloud"></i>');
-  } else if(weather == 'partlycloudy') {
-    return new Ember.Handlebars.SafeString('<i class="climacon sun cloud"></i>');
-  } else if(weather == 'mostlycloudy') {
-    return new Ember.Handlebars.SafeString('<i class="climacon sun cloud"></i>');
-  } else {
-    return new Ember.Handlebars.SafeString('<i class="climacon sun"></i>');
+  var weatherClass;
+  switch(weather) {
+    case 'cloudy':
+      weatherClass = 'cloud';
+      break;
+    case 'partlycloudy':
+      weatherClass = 'sun cloud';
+      break;
+    case 'mostlycloudy':
+      weatherClass = 'sun cloud';
+      break;
+    default:
+      weatherClass = 'sun';
   }
+
+  return new Ember.Handlebars.SafeString('<i class="climacon ' + weatherClass + '"></i>');
 }
 
 export { weatherIcon };
