@@ -23,7 +23,12 @@ function weatherIcon(weather) {
     rain: 'downpour'
   };
 
-  return new Ember.Handlebars.SafeString('<i class="climacon ' + weatherClass[weather] + '"></i>');
+  return climacon(weatherClass[weather])
+}
+
+// TODO: Break this into it's own helper.
+function climacon(iconClass) {
+  return new Ember.Handlebars.SafeString('<i class="climacon ' + iconClass + '"></i>');
 }
 
 export { weatherIcon };
