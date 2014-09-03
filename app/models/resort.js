@@ -12,9 +12,14 @@ export default DS.Model.extend({
   last_24_hours_snowfall: DS.attr('string'),
   wind: DS.attr('string'),
   conditions: DS.attr('string'),
-  human_readable_weather: DS.attr('string'),
+  baseDepth: DS.attr('string'),
+  humanReadableWeather: DS.attr('string'),
 
   fullDescription: function() {
     return this.get('name') + ', ' + this.get('state');
-  }.property('name', 'state')
+  }.property('name', 'state'),
+
+  currentSnowfall: function() {
+    return (this.get('last_24_hours_snowfall') || 0) + '"';
+  }.property('last_24_hours_snowfall')
 });
