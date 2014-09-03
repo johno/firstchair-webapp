@@ -2,8 +2,7 @@ import { weatherIcon } from 'firstchair/helpers/weather-icon';
 
 module('WeatherIconHelper');
 
-// Replace this with your real tests.
-test('it works', function() {
-  var result = weatherIcon(42);
-  ok(result);
+test('it has the proper classes', function() {
+  var result = weatherIcon('chanceflurries');
+  ok(result.toString().indexOf('climacon sun flurries') > 0);
 });

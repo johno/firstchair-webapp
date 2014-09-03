@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import { climacon } from './climacon';
 
 function weatherIcon(weather) {
   var weatherClass = {
@@ -23,12 +24,7 @@ function weatherIcon(weather) {
     rain: 'downpour'
   };
 
-  return climacon(weatherClass[weather])
-}
-
-// TODO: Break this into it's own helper.
-function climacon(iconClass) {
-  return new Ember.Handlebars.SafeString('<i class="climacon ' + iconClass + '"></i>');
+  return climacon(weatherClass[weather]);
 }
 
 export { weatherIcon };
