@@ -2,8 +2,7 @@ import Ember from 'ember';
 import { test, moduleForModel } from 'ember-qunit';
 
 moduleForModel('resort', 'Resort', {
-  // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:forecast']
 });
 
 test('it exists', function() {

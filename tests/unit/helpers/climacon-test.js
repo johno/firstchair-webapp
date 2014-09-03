@@ -9,6 +9,5 @@ test('it has the correct classes', function() {
 
 test('it has the correct tag', function() {
   var result = climacon('sun');
-  console.log(result);
   ok(result.toString().indexOf('<i') >= 0);
 });
