@@ -12,8 +12,9 @@ export default DS.Model.extend({
   days: function() {
     var weather = this.get('weather');
     var highs = this.get('highs');
-    var lows = this.get('lows')
-    return this.get('weather').map(function(currWeather, index) {
+    var lows = this.get('lows');
+
+    return weather.map(function(currWeather, index) {
       return {
         weather: currWeather,
         high: highs[index],
