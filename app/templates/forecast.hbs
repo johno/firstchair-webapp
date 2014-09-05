@@ -1,5 +1,6 @@
 {{startsAt}} <br>
-{{highs}} <br>
-{{lows}} <br>
-{{weather}} <br>
+{{#each days}}
+  {{weather}} <br>
+  {{high}}/{{low}} <br> <br>
+{{/each}}
 {{endsAt}}
