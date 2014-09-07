@@ -14,6 +14,7 @@ function weatherIcon(weather) {
     partlysunny: 'sun cloud',
     sleet: 'sleet',
     sunny: 'sun',
+    windy: 'wind',
     tstorms: 'lightning',
     clear: 'sun',
     chancesnow: 'sun snow',
@@ -24,7 +25,7 @@ function weatherIcon(weather) {
     rain: 'downpour'
   };
 
-  return climacon(weatherClass[weather]);
+  return climacon(weatherClass[weather] || 'sun');
 }
 
 export { weatherIcon };

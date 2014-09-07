@@ -23,5 +23,9 @@ export default DS.Model.extend({
 
   currentSnowfall: function() {
     return (this.get('last_24_hours_snowfall') || 0) + '"';
-  }.property('last_24_hours_snowfall')
+  }.property('last_24_hours_snowfall'),
+
+  hasWind: function() {
+    return this.get('wind') > 0;
+  }.property('wind')
 });
