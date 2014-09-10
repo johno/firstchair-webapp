@@ -7,7 +7,7 @@ export default DS.Model.extend({
   highs: DS.attr('array'),
   lows: DS.attr('array'),
 
-  resort: DS.belongsTo('resort'),
+  resort: DS.belongsTo('resort', { async: true }),
 
   days: function() {
     var weather = this.get('weather');
