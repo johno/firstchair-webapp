@@ -18,7 +18,8 @@ export default DS.Model.extend({
       return {
         weather: currWeather,
         high: highs[index],
-        low: lows[index]
+        low: lows[index],
+        daysSince: index
       };
     });
   }.property('weather', 'highs', 'lows')

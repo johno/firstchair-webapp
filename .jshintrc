@@ -3,7 +3,8 @@
     "document": true,
     "window": true,
     "-Promise": true,
-    "FirstchairENV": true
+    "FirstchairENV": true,
+    "moment": false
   },
   "browser" : true,
   "boss" : true,
