@@ -10,6 +10,8 @@ export default DS.Model.extend({
   weather: DS.attr('string'),
   temperature: DS.attr('string'),
   last_24_hours_snowfall: DS.attr('string'),
+  last_48_hours_snowfall: DS.attr('string'),
+  last_72_hours_snowfall: DS.attr('string'),
   wind: DS.attr('string'),
   conditions: DS.attr('string'),
   baseDepth: DS.attr('string'),
