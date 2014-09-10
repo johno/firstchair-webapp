@@ -17,7 +17,7 @@ export default DS.Model.extend({
   baseDepth: DS.attr('string'),
   humanReadableWeather: DS.attr('string'),
 
-  forecast: DS.belongsTo('forecast', { async: false }),
+  forecast: DS.belongsTo('forecast'),
 
   fullDescription: function() {
     return this.get('name') + ', ' + this.get('state');
