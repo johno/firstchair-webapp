@@ -18,5 +18,6 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 
 app.import('vendor/moment/moment.js');
+app.import('vendor/JavaScript-MD5/js/md5.js');
 
 module.exports = app.toTree();
