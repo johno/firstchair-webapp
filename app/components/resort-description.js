@@ -6,9 +6,17 @@ export default Ember.Component.extend({
   location: '',
   weather: '',
 
-  fullDescription: function() {
-    return this.get('name') + ', ' + this.get('location');
-  }.property('name', 'location'),
+  resortLocation: function() {
+    return this.get('location');
+  }.property('location'),
+
+  resortName: function() {
+    return this.get('name');
+  }.property('name'),
+
+  hasWeather: function() {
+    return !!this.get('weather');
+  }.property('weather'),
 
   weatherDescription: function() {
     return weatherIcon(this.get('weather'));

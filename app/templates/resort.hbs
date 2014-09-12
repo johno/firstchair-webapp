@@ -1,5 +1,5 @@
 <div class="center">
-  <h1 class="h3">{{fullDescription}}</h1>
+  <h1 class="h3">{{resort-description name=name location=state}}</h1>
   <div class="jumbo">
     {{weather-icon this.weather}}/{{currentSnowfall}}
   </div>
@@ -17,5 +17,8 @@
 
   {{#link-to 'forecast' this.forecast}}
     See Full Forecast
+  {{/link-to}} <br>
+  {{#link-to 'resorts'}}
+    See All Resorts
   {{/link-to}}
 </div>
