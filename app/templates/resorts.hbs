@@ -3,7 +3,7 @@
 {{#each}}
   {{#link-to 'resort' this}}
     <h2>
-      {{resort-description name=this.name state=this.state weather=this.weather}}
+      {{resort-description name=this.name location=this.state weather=this.weather}}
     </h2>
   {{/link-to}}
 {{/each}}

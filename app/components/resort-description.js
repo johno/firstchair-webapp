@@ -3,11 +3,12 @@ import { weatherIcon } from '../helpers/weather-icon';
 
 export default Ember.Component.extend({
   name: '',
-  state: '',
+  location: '',
+  weather: '',
 
   fullDescription: function() {
-    return this.get('name') + ', ' + this.get('state');
-  }.property('name', 'state'),
+    return this.get('name') + ', ' + this.get('location');
+  }.property('name', 'location'),
 
   weatherDescription: function() {
     return weatherIcon(this.get('weather'));
