@@ -19,3 +19,65 @@ a:focus,
 a:active { text-decoration: none; }
 
 .jumbo { font-size: 8rem; }
+
+.wi-cloudy:before,
+.wi-mostlycloudy:before,
+.wi-mostlysunny:before,
+.wi-partlycloudy:before,
+.wi-partlysunny:before {
+  content: "\f002";
+}
+
+.wi-fog:before {
+  content: "\f003";
+}
+.wi-sleet:before {
+  content: "\f006";
+}
+.wi-rain:before {
+  content: "\f008";
+}
+.wi-snow:before,
+.wi-flurries:before,
+.wi-chanceflurries:before {
+  content: "\f00a";
+}
+.wi-chancerain:before,
+.wi-chancesleet:before {
+  content: "\f00b";
+}
+.wi-sunny:before,
+.wi-clear:before {
+  content: "\f00d";
+}
+.wi-chancetstorms:before {
+  content: "\f00e";
+}
+.wi-tstorms:before {
+  content: "\f010";
+}
+.wi-cloudy:before,
+.wi-mostlycloudy:before,
+.wi-mostlysunny:before,
+.wi-partlycloudy:before,
+.wi-partlysunny:before {
+  content: "\f013";
+}
+.wi-sleet:before {
+  content: "\f017";
+}
+.wi-showers:before {
+  content: "\f01a";
+}
+.wi-snow:before {
+  content: "\f01b";
+}
+.wi-sprinkle:before {
+  content: "\f01c";
+}
+.wi-chancetstorms:before {
+  content: "\f01d";
+}
+.wi-thunderstorm:before {
+  content: "\f01e";
+}
