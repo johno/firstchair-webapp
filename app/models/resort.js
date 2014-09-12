@@ -19,10 +19,6 @@ export default DS.Model.extend({
 
   forecast: DS.belongsTo('forecast', { async: true }),
 
-  fullDescription: function() {
-    return this.get('name') + ', ' + this.get('state');
-  }.property('name', 'state'),
-
   currentSnowfall: function() {
     return (this.get('last_24_hours_snowfall') || 0) + '"';
   }.property('last_24_hours_snowfall'),
