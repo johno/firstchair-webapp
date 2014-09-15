@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('snotel-station', { path: 'snotel-stations/:snotel_station_id' }, function() {
 
   });
+  this.route('map');
 });
 
 export default Router;

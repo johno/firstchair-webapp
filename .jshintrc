@@ -4,7 +4,9 @@
     "window": true,
     "-Promise": true,
     "FirstchairENV": true,
-    "moment": false
+    "moment": false,
+    "Handlebars": false,
+    "L": false
   },
   "browser" : true,
   "boss" : true,
