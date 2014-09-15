@@ -1,0 +1,14 @@
+<div class="center">
+  <h1 class="h3">
+    {{name}}, {{state}}
+  </h1>
+  <div class="jumbo">
+    0"/{{pretty-temperature temperature}}
+  </div>
+
+  {{#if hasWind}}
+    <div class="h5">
+      {{weather-icon 'windy'}} {{wind}} MPH
+    </div>
+  {{/if}}
+</div>

@@ -1,0 +1,9 @@
+<h1>Snotel Stations</h1>
+
+{{#each}}
+  {{#link-to 'snotel-station' this}}
+    <h2>
+      {{name}}
+    </h2>
+  {{/link-to}}
+{{/each}}

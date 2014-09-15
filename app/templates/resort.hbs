@@ -7,7 +7,9 @@
     48 Hour: {{last_48_hours_snowfall}}",
     72 Hour: {{last_72_hours_snowfall}}"
   </div>
-  <div class="h5 mt0 p0">{{conditions}} and {{temperature}}&#176;F</div>
+  <div class="h5 mt0 p0">{{conditions}} and {{pretty-temperature temperature}}</div>
+
+  Updated {{time-ago-in-words updatedAt}}
 
   {{#if hasWind}}
     <div class="h5">
