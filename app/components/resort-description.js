@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import { weatherIcon } from '../helpers/weather-icon';
 
 export default Ember.Component.extend({
   name: '',
@@ -19,6 +18,6 @@ export default Ember.Component.extend({
   }.property('weather'),
 
   weatherDescription: function() {
-    return weatherIcon(this.get('weather'));
+    return this.get('weather');
   }.property('weather')
 });
