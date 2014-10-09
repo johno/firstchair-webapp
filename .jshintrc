@@ -2,7 +2,10 @@
   "predef": {
     "document": true,
     "window": true,
-    "-Promise": true
+    "-Promise": true,
+    "moment": true,
+    "L": true,
+    "Handlebars": true
   },
   "browser" : true,
   "boss" : true,
