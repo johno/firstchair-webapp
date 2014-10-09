@@ -5,6 +5,8 @@ import config from './config/environment';
 
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
+Ember.ENV.ACTIVE_MODEL_API_URL = 'http://api.firstchair.io';
+
 var App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
