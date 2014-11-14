@@ -1,6 +1,9 @@
-{{#each}}
-  {{#link-to 'snotel-station' this}}
-    {{name}}
-  {{/link-to}}
-{{/each}}
+<ul>
+  {{#each}}
+    <li>
+      {{#link-to 'snotel-station' this}}
+        {{name}}
+      {{/link-to}}
+    </li>
+  {{/each}}
 {{outlet}}

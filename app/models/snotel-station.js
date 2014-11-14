@@ -8,7 +8,10 @@ export default DS.Model.extend({
   latitude: DS.attr('string'),
   longitude: DS.attr('string'),
   region: DS.attr('string'),
-  token: DS.attr('string')
+  token: DS.attr('string'),
+  updatedAt: DS.attr('string'),
+  last_7_days_snowfall_in: DS.attr('number'),
+  last_24_hours_snowfall_in: DS.attr('number')
 
   //weather: DS.belongsTo('weather')
 });
