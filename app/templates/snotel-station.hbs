@@ -1,39 +1,39 @@
-<h1>{{name}}</h1>
+<h1>{{listFilterObject.name}}</h1>
 
 <dl>
   <dt>
     Elevation
   </dt>
   <dd>
-    {{elevation}} 
+    {{listFilterObject.elevation}} 
   </dd>
 
   <dt>
     Last 24 Hours Snowfall
   </dt>
   <dd>
-    {{last_24_hours_snowfall_in}}&quot;
+    {{listFilterObject.last_24_hours_snowfall_in}}&quot;
   </dd>
 
   <dt>
     Last 7 Days Snowfall
   </dt>
   <dd>
-    {{last_7_days_snowfall_in}}&quot;
+    {{listFilterObject.last_7_days_snowfall_in}}&quot;
   </dd>
 
   <dt>
     Location
   </dt>
   <dd>
-    {{state}}: {{latitude}}, {{longitude}}
+    {{listFilterObject.state}}: {{listFilterObject.latitude}}, {{listFilterObject.longitude}}
   </dd>
 
   <dt>
     Last Updated
   </dt>
   <dd>
-    {{time-ago-in-words updatedAt}}
+    {{listFilterObject.time-ago-in-words updatedAt}}
   </dd>
 </dl>
 

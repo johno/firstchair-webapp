@@ -1,9 +1,3 @@
-<ul>
-  {{#each}}
-    <li>
-      {{#link-to 'snotel-station' this}}
-        {{name}}
-      {{/link-to}}
-    </li>
-  {{/each}}
+{{list-filter list=this partial='snotel-station' properties='name state latitude longitude'}}
+
 {{outlet}}
